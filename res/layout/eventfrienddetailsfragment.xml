@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/eventDetailHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#FF9912"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/QueGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_weight="33"
+                android:button="@drawable/eventstabselector"
+                android:text="Events" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_weight="33"
+                android:button="@drawable/friendstabselector"
+                android:text="Friends" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_weight="33"
+                android:button="@drawable/mestabselector"
+                android:text="Me" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/innerFragmentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FDF5E6"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

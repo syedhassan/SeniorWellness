@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">Sign Up</string>
+    <string name="my_account">My Account</string>
+    <string name="friends">Friends</string>
+    <string name="notification">Notification</string>
+    <string name="foreground_service_started">Service is in the foreground</string>
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerLayout"
+    android:layout_width="300dp"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/mainlistbackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/signOutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3A66A7"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/signUpLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signuplogo" />
+
+        <TextView
+            android:id="@+id/signOutText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingLeft="5dp"
+            android:text="Sign out"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cautionMessageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/cautionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Are you sure, you want to sign out?"
+            android:textColor="#3A66A7"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionalNoteLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/optionalNoteText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="NOTE (OPTIONAL)"
+            android:textColor="#415C93"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/messageSection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/messageText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:height="60dp"
+            android:hint="Leave a comment for friends..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirmButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/confirmYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@null"
+            android:src="@drawable/confirmyes" />
+
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="10dp"
+            android:layout_height="fill_parent" />
+
+        <ImageButton
+            android:id="@+id/confirmNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@null"
+            android:src="@drawable/confirmno" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirmButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/mainlistbackground" />
+    </LinearLayout>
+
+</LinearLayout>

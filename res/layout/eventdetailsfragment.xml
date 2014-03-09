@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/eventDetailHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabportrait480x65"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/eventDetailHeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="80"
+                android:orientation="horizontal"
+                android:text="EVENT NAME"
+                android:textColor="#032a2f"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/saveEventImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:paddingRight="5dp"
+                android:src="@drawable/bookmark52x50"
+                android:tag="bookmark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabLinearLayut"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FDF5E6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/whereLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/whereText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="where : "
+                    android:textColor="#CE6620"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:id="@+id/addressEventDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="handleAddressActivity"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/locationText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6D6E71"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/addressText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6D6E71"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/zipText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6D6E71"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/whenLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/whenText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:text="when : "
+                    android:textColor="#CE6620"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:id="@+id/timeEventDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/timeText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6D6E71"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contactLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="callPhone1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/contactText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:text="contact : "
+                    android:textColor="#CE6620"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:id="@+id/contactEventDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/phoneText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6D6E71"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signUpLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp" >
+
+                <ProgressBar
+                    android:id="@+id/progress0"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/eventSignDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="you signed up on 10/23"
+                    android:textColor="@color/main_screen_text1"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/signUpImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/friendsCountLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines" >
+
+                <TextView
+                    android:id="@+id/friendsCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="3 FRIENDS SIGNED UP"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" >
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/dummy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp" >
+
+                    <ProgressBar
+                        android:id="@+id/progress1"
+                        style="?android:attr/progressBarStyleSmallTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/friendsPictureLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/desriptionLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textlines"
+                    android:paddingLeft="20dp"
+                    android:text="DESCRIPTION"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/desriptionTextLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6D6E71"
+                    android:textSize="20dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/webLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openBrowser"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/webText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="web : "
+                    android:textColor="#CE6620"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:id="@+id/webEventDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/webAddressText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6D6E71"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/costLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/webText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="cost : "
+                    android:textColor="#CE6620"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:id="@+id/costEventDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/costText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6D6E71"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/picturesCountLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines" >
+
+                <TextView
+                    android:id="@+id/picturesCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="2 PHOTOS"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:id="@+id/dummy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp" >
+
+                    <ProgressBar
+                        android:id="@+id/progress2"
+                        style="?android:attr/progressBarStyleSmallTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eventPicturesLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/videosCountLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines" >
+
+                <TextView
+                    android:id="@+id/videosCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="2 VIDEOS"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:id="@+id/dummy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp" >
+
+                    <ProgressBar
+                        android:id="@+id/progress3"
+                        style="?android:attr/progressBarStyleSmallTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eventVideosLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/messageCountLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines" >
+
+                <TextView
+                    android:id="@+id/messageCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="80"
+                    android:paddingLeft="20dp"
+                    android:text="0 POSTED NOTE(S)"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/sendMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="20"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/createmessage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eventMessagesLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shareEventLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/shareFriendsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:paddingLeft="20dp"
+                    android:text="SHARE WITH FRIENDS"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/shareEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="30"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/share" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mainlistbackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/textLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Name of the event"
+                android:textColor="@color/main_screen_text1"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Address of the event"
+                android:textColor="@color/main_screen_text2"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="10/22 - SUN 10/23"
+                android:textColor="@color/main_screen_text2"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/countLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/eventResponseImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/signuplogo"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/eventPersonCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="3"
+                    android:textColor="@color/main_screen_text3"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/imageCount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/eventPersonCount"
+                    android:src="@drawable/friendcount52x50" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/pictureLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/eventPicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/event" />
+
+            <ImageView
+                android:id="@+id/eventPictureType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eventPicture"
+                android:src="@drawable/medialabel100x26" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

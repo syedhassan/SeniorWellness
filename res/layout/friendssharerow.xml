@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mainlistbackground"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/friendImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="20"
+        android:src="@drawable/profiledefault67x66" />
+
+    <TextView
+        android:id="@+id/friendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:paddingLeft="10dp"
+        android:text="Crysta Metcalf"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/checkImage"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:src="@drawable/checkboxselected75x66" />
+
+</LinearLayout>

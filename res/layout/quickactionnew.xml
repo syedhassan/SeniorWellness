@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip" >
+
+    <RelativeLayout
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cameravideogrill271x134"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/imagesLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_title_camera" />
+
+            <ImageView
+                android:id="@+id/border"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/camera"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/border"
+                android:clickable="true"
+                android:src="@drawable/ic_title_video" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

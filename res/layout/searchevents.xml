@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp" >
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mainlistbackground"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/signOutHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#3A66A7"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/signUpLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/signuplogo" />
+
+                <TextView
+                    android:id="@+id/signOutText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="Search Events"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/searchLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signOutHeader"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp" >
+
+                <ImageButton
+                    android:id="@+id/searchImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/textsearch" />
+
+                <EditText
+                    android:id="@+id/searchBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/searchImage"
+                    android:hint="Type here to search"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/eventsCountLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchLayout"
+                android:background="#8E8E8E"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/eventsCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13 EVENTS FOUND"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/eventsCountLinearLayout" >
+
+                <RelativeLayout
+                    android:id="@+id/bigRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/searchListLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cancelButtons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/searchListLayout"
+                        android:layout_marginBottom="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="10dp"
+                        android:visibility="invisible" >
+
+                        <ImageButton
+                            android:id="@+id/cancelEventSearching"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/back" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_screen_title">#BCCDFF</color> <!-- Converted this color from R:188 G:205 B:255 -->
+    <color name="main_screen_text1">#415C93</color> <!-- Converted this color from R:65 G:92 B:147 -->
+    <color name="main_screen_text2">#6D6E71</color> <!-- Converted this color from R:109 G:110 B:113 -->
+    <color name="main_screen_text3">#B29A36</color> <!-- Converted this color from R:178 G:154 B:54 -->
+    <color name="main_screen_text_media">#529231</color>
+    <color name="main_screen_list_background">#FFFEF3</color> <!-- Converted this color from R:255 G:254 B:243 -->
+    <color name="main_screen_list_separator">#848E93</color> <!-- Converted this color from R:132 G:142 B:147 -->
+    <color name="search_pressed_color">#00ff00</color>
+    <color name="media_color">#9ACD32</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <drawable name="translucent_background">#a0000000</drawable>
+
+</resources>

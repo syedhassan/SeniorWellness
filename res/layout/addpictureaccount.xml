@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainlistbackground"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/signOutHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#3A66A7"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/signUpLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signuplogo" />
+
+            <TextView
+                android:id="@+id/signOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingLeft="5dp"
+                android:text="Create Account"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherTagLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <LinearLayout
+                android:id="@+id/firstNameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textMessageAdd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lets add a picture to your profile."
+                    android:textColor="#415C93"
+                    android:textSize="21dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/createAccountButtonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/startCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/startcamera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skipPictureLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/skipCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/skipcamera" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

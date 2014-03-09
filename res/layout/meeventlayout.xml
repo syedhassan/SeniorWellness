@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainlistbackground"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/contentsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/friendsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• 10/22-23: "
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/friendsNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Las Olas Art Fair(Fort Lauderadale)"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

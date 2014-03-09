@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip" >
+
+    <RelativeLayout
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/phonetextemailgrill391x134"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/imagesLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="08dp"
+            android:layout_marginTop="08dp" >
+
+            <ImageView
+                android:id="@+id/callPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_title_call" />
+
+            <ImageView
+                android:id="@+id/border1"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/callPhone"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/border1"
+                android:clickable="true"
+                android:src="@drawable/ic_title_text" />
+
+            <ImageView
+                android:id="@+id/border2"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/border2"
+                android:clickable="true"
+                android:src="@drawable/ic_title_email" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

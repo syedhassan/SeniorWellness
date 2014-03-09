@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabLinearLayut"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="43dp" >
+
+            <ListView
+                android:id="@+id/eventsListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/main_screen_list_separator"
+                android:dividerHeight="2dp"
+                android:fadeScrollbars="true" />
+
+            <ListView
+                android:id="@+id/friendsListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/main_screen_list_separator"
+                android:dividerHeight="2dp"
+                android:fadeScrollbars="true" />
+
+            <LinearLayout
+                android:id="@+id/meView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </LinearLayout>
+        </FrameLayout>
+    </TabHost>
+
+</LinearLayout>

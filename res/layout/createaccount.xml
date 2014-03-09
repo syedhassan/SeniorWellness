@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainlistbackground"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/signOutHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#3A66A7"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/signUpLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signuplogo" />
+
+            <TextView
+                android:id="@+id/signOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingLeft="5dp"
+                android:text="Create Account"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherTagLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <LinearLayout
+                android:id="@+id/firstNameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/editTextFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="first name"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="10dp"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lastNameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/editTextLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="last name"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="10dp"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phoneNumberLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/editTextPhoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="phone number"
+                    android:inputType="phone"
+                    android:nextFocusDown="@+id/editTextEmail"
+                    android:paddingLeft="10dp"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passwordLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirmPasswordLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/editTextConfirmPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="confirm password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="23dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/createAccountButtonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

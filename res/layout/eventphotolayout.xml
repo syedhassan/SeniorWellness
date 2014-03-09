@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/mainlistbackground"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/signOutHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#3A66A7"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/signUpLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signuplogo" />
+
+            <TextView
+                android:id="@+id/signOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_toRightOf="@id/signUpLogo"
+                android:text="7 photos"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/myGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/signOutHeader"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:padding="10dp"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/cancelButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/cancelEventTagging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cancel" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

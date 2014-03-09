@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/meTabFragment "
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainlistbackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headerForName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabportrait480x65"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/friendNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUNG LEE"
+            android:textColor="#415C93"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eventDetailHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:id="@+id/meImageViewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="90"
+            android:gravity="center_vertical|center_horizontal|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/friendNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="708-334-9935"
+                android:textColor="#415C93"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/friendEmailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="young.lee@motorola.com"
+                android:textColor="#415C93"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/meImageViewLayout123"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/saveEventImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profiledefault67x66" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/tabLinearLayut"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FDF5E6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/upcomingEventsLinearLayoutHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/upcomingEventsCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textlines"
+                    android:paddingLeft="20dp"
+                    android:text="3 UPCOMING EVENTS"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upcomingEventsLinearLayoutText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/savedEventsLinearLayoutHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/savedEventsCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textlines"
+                    android:paddingLeft="20dp"
+                    android:text="2 SAVED EVENTS"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/savedEventsLinearLayoutText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pastEventsLinearLayoutHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/pastEventsCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textlines"
+                    android:paddingLeft="20dp"
+                    android:text="6 PAST EVENTS"
+                    android:textColor="#415C93"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pastEventsLinearLayoutText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
